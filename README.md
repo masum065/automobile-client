@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+
 # Auto Mobile
 
 ### [Live Site](https://automobile0.netlify.app/)
@@ -12,4 +12,7 @@
 -   React Hook From
 -   Netlify Hosting
 -   Scss
+-   MongoDb
+-   Express
+-   Node JS
 
