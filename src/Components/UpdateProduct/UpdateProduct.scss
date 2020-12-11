@@ -1,0 +1,38 @@
+.hook-form {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  .title {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 45px;
+  }
+  .form-input {
+    margin-bottom: 30px;
+    input {
+      display: block;
+      width: 100%;
+      padding: 10px 15px;
+      border: 2px solid #b8babc;
+      border-radius: 10px;
+      color: #1c1e1f;
+      font-weight: 600;
+
+      &::placeholder {
+        color: #b8babc;
+      }
+    }
+    label {
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+  input[type='submit'] {
+    width: 100%;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 10px;
+    background: #424648;
+    color: #fff;
+    font-weight: 500;
+  }
+}

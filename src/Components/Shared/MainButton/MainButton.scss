@@ -1,0 +1,11 @@
+.main-button {
+  border: none;
+  background: #424648;
+  color: #fff;
+  padding: 10px 25px;
+  border-radius: 10px;
+
+  &:hover {
+    background: #676d70;
+  }
+}

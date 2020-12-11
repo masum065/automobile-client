@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  outline: 0;
+  padding: 0;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+  outline: 0 solid;
+}
+button:focus,
+button:active {
+  outline: none;
+}
+ul,
+li {
+  list-style-type: none;
+  margin: 0;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+p {
+  margin-bottom: 0;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #394144;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.sidebar {
+  background: #2ba7dd;
+  color: #fff;
+  text-align: center;
+  height: 400px;
+  border-radius: 12px;
+  padding: 30px;
+  font-size: 23px;
+}

@@ -1,0 +1,17 @@
+.header {
+  padding: 15px 0;
+  border-bottom: 2px solid #39414438;
+  .logo {
+    img {
+      max-width: 110px;
+      margin: 0;
+      padding: 10px 0;
+    }
+  }
+  .header-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100%;
+  }
+}

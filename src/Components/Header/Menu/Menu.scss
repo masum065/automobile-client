@@ -1,0 +1,14 @@
+.main-menu {
+  a {
+    color: #394144;
+    font-size: 19px;
+    font-weight: 600;
+    padding: 10px 15px;
+    transition: 0.2s;
+    display: inline-block;
+
+    &:hover {
+      color: #ec488f;
+    }
+  }
+}

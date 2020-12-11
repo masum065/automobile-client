@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import { createContext, useState } from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import './App.scss';
+import AddCar from './Components/AddCar/AddCar';
+import Home from './Components/Home/Home/Home';
+import ProductDetails from './Components/ProductDetails/ProductDetails/ProductDetails';
+import UpdateProduct from './Components/UpdateProduct/UpdateProduct';
+import NotFound from './NotFound/NotFound';
 
+export const SearchContext = createContext();
 function App() {
+  const [search, setSearch] = useState('');
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <SearchContext.Provider value={[search, setSearch]}>
+      <Router>
+        <Switch>
+          <Route path='/home' component={Home} />
+          <Route path='/car/detail' component={ProductDetails} />
+          <Route path='/car/details/:carId' component={ProductDetails} />
+          <Route path='/addCar' component={AddCar} />
+          <Route path='/cars/update/:id' component={UpdateProduct} />
+          <Route exact path='/' component={Home} />
+          <Route path='*' component={NotFound} />
+        </Switch>
+      </Router>
+    </SearchContext.Provider>
   );
 }
 
